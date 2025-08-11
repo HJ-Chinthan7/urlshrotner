@@ -25,7 +25,7 @@ const Shortener = () => {
       const data = await response.json();
 
       if (response.ok) {
-        setShortUrl(`https://urlshrotner-seven.vercel.app/${data.urlCode}`);
+        setShortUrl(`https://urlshrotner-u51t.onrender.com/${data.urlCode}`);
       } else {
         setError(data.error || "Failed to shorten URL");
       }
