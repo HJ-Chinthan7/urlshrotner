@@ -64,7 +64,7 @@ const Analytics = () => {
                   </a>
                 </td>
                 <td>
-                  <a href={`https://urlshrotner-u51t.onrender.com/${item.shortUrl}`} target="_blank" rel="noopener noreferrer" className="analytics-url">
+                  <a href={`${item.shortUrl}`} target="_blank" rel="noopener noreferrer" className="analytics-url">
                     {item.shortUrl}
                   </a>
                 </td>
