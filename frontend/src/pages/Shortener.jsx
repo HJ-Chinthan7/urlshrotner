@@ -14,8 +14,7 @@ const Shortener = () => {
     setShortUrl("");
 
     try {
-      console.log("here");
-      const response = await fetch("http://localhost:5000/api/shortner", {
+      const response = await fetch("https://urlshrotner-u51t.onrender.com/api/shortner", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -26,7 +25,7 @@ const Shortener = () => {
       const data = await response.json();
 
       if (response.ok) {
-        setShortUrl(`http://localhost:5000/${data.urlCode}`);
+        setShortUrl(`https://urlshrotner-u51t.onrender.com/${data.urlCode}`);
       } else {
         setError(data.error || "Failed to shorten URL");
       }

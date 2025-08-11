@@ -12,7 +12,7 @@ const Analytics = () => {
 
   const fetchAnalytics = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/analytics');
+      const response = await fetch('https://urlshrotner-u51t.onrender.com/api/analytics');
       const data = await response.json();
       
       if (response.ok) {
@@ -64,7 +64,7 @@ const Analytics = () => {
                   </a>
                 </td>
                 <td>
-                  <a href={`http://localhost:5000/${item.shortUrl}`} target="_blank" rel="noopener noreferrer" className="analytics-url">
+                  <a href={`https://urlshrotner-u51t.onrender.com/${item.shortUrl}`} target="_blank" rel="noopener noreferrer" className="analytics-url">
                     {item.shortUrl}
                   </a>
                 </td>
